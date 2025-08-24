@@ -1,0 +1,101 @@
+body {
+    /* font-family:  font; changes font*/
+    /* background-color: colour; changes background colour*/
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+}
+
+h1{
+    /* need to remove white space between header and top of page -  */
+    margin: 0px;
+    padding: 8px;
+}
+
+ul{
+    margin: 0px;
+}
+
+body> main article{
+    width: 70%;
+    /* centres text in main - margins automatically made equal on left and right (based on 70% width) */
+    margin: auto;
+    /* each character size is 1.35% of screen */
+    font-size: 1.35vw;
+}
+
+/* use body > so only the header tag that is direct descendent of body tag is targetted - not every header tag  */
+body > header {
+    background-color: orange;
+    color: white;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Targets only things with class nav_button */
+.nav_button{
+    color: white;
+    /* removes the underlining of link */
+    text-decoration: none;
+    padding: 8px;
+    border: 1px, solid, brown;
+    border-radius: 15%;
+
+}
+
+#nav_buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    list-style-type: none;
+}
+
+#nav_buttons > li{
+    padding: 8px;
+}
+
+img{
+    /* makes edges of image rounder - higher number = more round */
+    border-radius: 50%;
+}
+
+form{
+    /* aligns the text in the form to the centre - different to previous but not sure why yet */
+    text-align: left;
+    margin-left: 35%;
+
+    
+}
+
+body>footer{
+    background-color: orange;
+    display: flex;
+}
+
+#footer_ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer_ul>div>li{
+    margin-left: 12px;
+}
+
+#footer_ul>div>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content aside{
+    width: 20%;
+}
+
+#main-content > div{
+    width: 80%;
+}
